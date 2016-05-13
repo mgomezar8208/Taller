@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Zona de etiquetas META -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Zona de título -->
+<title> Control de lectura </title>
+<!-- Zona de recursos enlazados (CSS, RSS, JavaScript) -->
+<link rel="stylesheet" href="#" type="text/css" media="screen" />
+<link rel="stylesheet" href="#" type="text/css" media="print" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="#" />
+<script type="text/javascript">
+
+function Eliminar(){
+alert("Se elimino campeonato");
+}
+
+function Enviar(){
+alert("Formulario Enviado");
+}
+
+</script>
+</head>
+
+<body bgcolor="#000099" >
+
+<p	style="color:#ffffff" align="center">
+Inscribe equipos a tu campeonato asign&aacutendolos a los grupos configurados anteriormente (Datos del campeonato / sistema de eliminaci&oacuten). Muchos equipos ya est&aacuten inscritos en Goles y Futbol.com por ello solo debes:
+</p>
+
+<ol style="color:#ffffff" >
+<li>Conocer la c&eacutedula del due&ntilde;o o representante &uacutenico de cada equipo</li>
+<li>Si el equipo ya est&aacute inscrito en Goles y Futbol.com, solo tendr&aacutes que actualizar los nombres y apellidos.</li>
+<li>Para mantener autom&aacuteticamente informados a todos los equipos de la programaci&oacuten, tarjetas etc..., es importante ingresar los mail de cada representante &uacutenico de cada equipo</li>
+</ol>
+<form  method="post">
+	<table border="1" >
+		<tr>
+			<td style="color:#ffffff" colspan="2">Documento</td>
+			<td style="color:#ffffff" rowspan="2">Nombre</td>
+			<td style="color:#ffffff" rowspan="2">Apellido</td>
+			<td style="color:#ffffff" rowspan="2">Cuenta de correo</td>
+			<td style="color:#ffffff" rowspan="2">Fecha de Nacimiento (dd/mm/aaaa)</td>
+			<td style="color:#ffffff" rowspan="2">*Nombre del Equipo</td>
+			<td style="color:#ffffff" rowspan="2">*Ciudad</td>
+		</tr>
+		
+		<tr>
+			<td style="color:#ffffff">Tipo</td>
+			<td style="color:#ffffff">*Numero</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<select id="tipo" name="tipo">
+					<option value="cedula">C&eacutendula de ciudadan&iacutena</option>
+					<option value="registro">Registro civil</option>
+					<option value="tarjeta">Targeta de identidad</option>
+					<option value="cedulae">C&eacutendula de extranjer&iacutea</option>
+					<option value="pasaporte">Pasaporte</option>
+					<option value="nit">NIT</option>
+				</select>
+			</td>
+			<td><input type="text" name="numero" value="" /></td>
+			<td><input type="text" name="nombre" value="" /></td>
+			<td><input type="text" name="apellido" value="" /></td>
+			<td><input type="text" name="correo" value="" /></td>
+			<td><input type="text" name="fechan" value="" /></td>
+			<td><input type="text" name="nombree" value="" /></td>
+			<td>
+				<select id="ciudad" name="ciudad">
+					<option value="bogota">Bogota</option>
+					<option value="cali">Cali</option>
+					<option value="barranquilla">Barranquilla</option>
+					<option value="medellin">Medellin</option>
+				</select>
+			</td>
+
+		</tr>
+	</table>
+
+	<p align="right" >	<input type="submit" name="enviar" value="Guardar he inscribir a formulario" /></p>
+</form>
+
+<p style="color:#ffffff">Equipos inscritos - 6 Ronda </p>
+
+	<p align="right" style="color:#ffffff" >
+	<img src="http://www.unipamplona.edu.co/unipamplona/hermesoft/portalIG/GruposIG/publico/ayuda/images/eliminar.gif" alt="elimniar"/>
+	<a style="color:#ffffff" name="eliminar" onclick="Eliminar()" href="#">Eliminar del Campeonato</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://www.paracaidismodeportivograncanaria.com/IMAGENES/emailnuevo.gif" alt="enviar"/><a name="EnviarF" style="color:#ffffff"  onclick="Enviar()" href="#">Enviar Formulario de Inscripcion</a>
+
+	</p>
+
+
+<form action="" method="post">
+	<table border="1">
+		<tr>
+			<th style="color:#ffffff" rowspan="2">Gr</th>
+			<th style="color:#ffffff" rowspan="2">No</th>
+			<th style="color:#ffffff" colspan="5">Documento</th>
+			<th style="color:#ffffff" rowspan="2" colspan="4">Nombre del Equipo</th>
+			<th style="color:#ffffff" colspan="4">*Representante Unico</th>
+			<th style="color:#ffffff" rowspan="2"><input size="1" type="text" name="N" value="N" /></th>
+			<th style="color:#ffffff" rowspan="2" colspan="6" scope="col" >Opciones</th>
+		</tr>
+		
+		<tr>
+			<th style="color:#ffffff" colspan="2">Tipo</th>
+			<td style="color:#ffffff" colspan="3">Numero</td>
+			<td style="color:#ffffff" colspan="2">Nombres</td>
+			<td style="color:#ffffff" colspan="2">Apellidos</td>
+		</tr>
+		
+		<tr>
+			<th style="color:#ffffff" rowspan="3">A</th>
+			<th style="color:#ffffff" colspan="21" scope="col" > Grupo - A </th>
+		
+		</tr>
+		
+		<tr>
+		
+			<th style="color:#ffffff" rowspan="1">1</th>
+			<th style="color:#ffffff" colspan="2">cc</th>
+			<th style="color:#ffffff" colspan="3">######</th>
+			<th style="color:#ffffff" colspan="4">H2O</th>
+			<th style="color:#ffffff" colspan="2">Liberdo Andres</th>
+			<th style="color:#ffffff" colspan="2">Ardila Torres</th>
+			<th style="color:#ffffff" rowspan="1"><input  name="N1" type="checkbox" value=""/></th>
+			<th style="color:#ffffff" colspan="2"><ins>Editar</ins></th>
+			<th style="color:#ffffff" colspan="2"><ins>InsJug</ins></th>
+			<th style="color:#ffffff" colspan="2"><ins>RegUsu</ins></th>
+			
+		</tr>
+		
+		<tr>
+		
+			<th style="color:#ffffff" rowspan="1">2</th>
+			<th style="color:#ffffff" colspan="2">cc</th>
+			<th style="color:#ffffff" colspan="3">######</th>
+			<th style="color:#ffffff" colspan="4">Los Amigos de LOzano</th>
+			<th style="color:#ffffff" colspan="2">Juan </th>
+			<th style="color:#ffffff" colspan="2">Lozano</th>
+			<th style="color:#ffffff" rowspan="1"><input  name="N1" type="checkbox" value=""/></th>
+			<th style="color:#ffffff" colspan="2"><ins>Editar</ins></th>
+			<th style="color:#ffffff" colspan="2"><ins>InsJug</ins></th>
+			<th style="color:#ffffff" colspan="2"><ins>RegUsu</ins></th>
+			
+		</tr>
+		
+	</table>
+</form>
+
+
+</body>
+</html>
+</html>
